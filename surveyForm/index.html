@@ -1,12 +1,112 @@
+<!--
+freecodecamp
+
+USERSTORY #10
+
+
+-->
+
 <!DOCTYPE html>
 <html lang="FR">
 
 <head>
 	<meta charset="UTF-8" />
-	<title>My tribute page</title>
+	<title>surveyForm</title>
 	<link rel="stylesheet" href="style/style.css" />
 
 	<!-- FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Sulphur+Point:300,400,700&display=swap" rel="stylesheet"> 
 	<!-- FONT END -->
 </head>
+<body id="main">
+	<div id="top-page">
+		<h1 id="title">I'm a survey form !</h1>
+		<p id="description">let's get some data and make money</p>
+	</div>
+	<form id="survey-form">
+
+		<label class="label-form" id="name-label">Name</label><br>
+		<input class="form-input" type="text" placeholder="Enter your name" required/>
+		<br><br>
+
+
+		<label class="label-form" id="email-label">Email</label><br>
+		<input class="form-input" type="email" placeholder="Enter your email" required />
+		<br><br>
+
+
+		<label class="label-form" id="number-label">Age <small>(optional)</small></label><br>
+		<input class="form-input" type="number" min="10" max="99" placeholder="Enter your age" required/>
+		<br><br>
+
+
+		<label class="label-form">Which is your favorite langage ?</label><br>
+		<select class="form-input" id="dropdown">
+			<option disabled="" selected="" value="">Select an option</option>
+			<option>Php</option>
+			<option>Html</option>
+			<option>Css</option>
+			<option>Langage C</option>
+			<option>Python</option>
+			<option>Django</option>
+		</select>
+		<br><br>
+
+
+		<p class="label-form" id="radio-label">Your Operating system</p>
+			<label class="container">Others
+			<input type="radio"name="os" value="others" checked/>
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">Windows
+			<input type="radio" name="os" value="windows" />
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">Linux
+			<input type="radio" name="os" value="linux" />
+			<span class="checkmark"></span>
+		</label>
+		<label class="container">MacOS
+			<input type="radio" name="os" value="macos" />
+			<span class="checkmark"></span>
+		</label>
+		<br>
+
+
+		<p class="label-form" id="checkbox-label">What personality traits do you have ?</p>
+
+		 <label class="c-container">Reckless
+			<input type="checkbox" name="personality" value="reckless">
+			<span class="c-checkmark"></span>
+		</label>
+
+		<label class="c-container">Providant
+			<input type="checkbox" name="personality" value="providant">
+			<span class="c-checkmark"></span>
+		</label>
+
+		<label class="c-container">Funny
+			<input type="checkbox" name="personality" value="funny">
+			<span class="c-checkmark"></span>
+		</label>
+
+		<label class="c-container">perspicacious
+			<input type="checkbox" name="personality" value="perspicacious">
+			<span class="c-checkmark"></span>
+		</label> 
+
+		<label class="c-container">Vicious
+			<input type="checkbox" name="personality" value="vicious">
+			<span class="c-checkmark"></span>
+		</label>
+		<br>
+
+
+		<p class="label-form">Any comments or suggestions ?</p>
+		<textarea id="form-textarea" maxlength="255" placeholder="Enter your comment here !"></textarea>
+		<br>
+
+
+		<input type="submit" id="submit" required />
+	</form>
+</body>
