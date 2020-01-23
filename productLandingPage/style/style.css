@@ -1,0 +1,90 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+  padding: 0!important;
+}
+#main{
+  background-color: red;
+}
+
+.navbar{
+  padding: 0!important;
+  background-color: white;
+}
+#header{
+  min-height: 100px;
+
+}
+
+#header-div-img{
+  width:      50px;
+  height:     auto;
+}
+
+#header-img{
+  width: 100px;
+  height: auto;
+  margin-left: 10px;
+}
+
+#navbar-ul{
+  float:right;
+  margin-left: auto;
+}
+
+ul > li{
+  width:    150px;
+  text-align:center;
+}
+
+ul > li:hover{
+    font-weight: bold;
+}
+
+#cont-video{
+  background-color: black;
+  height: 300px;
+  width: 100%;
+  margin:auto;
+}
+
+#video{
+  width: 100%;
+  height: 100%;
+}
+
+#form{
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+#h3{
+  margin: 15px 0 15px 0;
+}
+
+@media only screen and (max-width: 580px)
+{
+  #header-cont-img{
+    margin: auto;
+  }
+  #navbar-ul{
+    margin: auto;
+    width: 100%;
+  }
+  ul > li{
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    width: 100%!important;
+  }
+  ul > li:hover{
+    background-color: lightblue;
+    width: 100%;
+  }
+}
