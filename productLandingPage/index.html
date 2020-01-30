@@ -15,8 +15,6 @@
 	<!-- FONT END -->
 </head>
 
-<body id="main">
-
   <header class="container-fluid" id="header">
     <nav class="navbar navbar-expand-sm" id="nav-bar">
       <div class="navbar-header" id="header-cont-img">
@@ -40,17 +38,70 @@
     </nav>
   </header>
 
+<body id="main">
   <div id="cont-video">
         <video autoplay muted loop id="video" onClick="videoPause()">
           <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4"/>
         </video>
   </div>
 
-  <form id="form">
+  <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
     <h3 id="h3">Sous traitez en Inde à prix canon !</h3>
-    <input type="email" placeholder="Enter your email" />
+    <input name="email" type="email" placeholder="Enter your email" />
+    <br><br>
+    <input type="submit" value="submit" id="submit" />
   </form>
 
+  <div id="offers">
+<!-- vignette 1 -->
+    <div class="vignette">
+      <div class="vignette-img">
+        <img class="vi-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.hjjjm6KdQlggFMjFN8ybdwHaDt%26pid%3DApi&f=1" alt="image de vignettes"/>
+      </div>
+      <div class="vignette-text">
+        <h4>Voyage au USA</h4>
+        <span style="padding-bottom: 5px;">Voyagez en exclusivité avec notre partenaire Voli-vola</span>
+        <ul class="ul-txt-info">
+          <li class="vignette-txt-info">Prix : 1500 €/p</li>
+          <li class="vignette-txt-info">7 jours compris</li>
+          <li class="vignette-txt-info">21 repas compris !</li>
+        </ul>
+      </div>
+    </div>
+<!-- vignette 1 -->
+<!-- vignette 2 -->
+    <div class="vignette">
+      <div class="vignette-img">
+        <img class="vi-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.b8FFDSj_yvw6-SZHq7E8gQHaE7%26pid%3DApi&f=1" alt="image de vignettes"/>
+      </div>
+      <div class="vignette-text">
+        <h4>Voyage au USA</h4>
+        <span style="padding-bottom: 5px;">Voyagez en exclusivité avec notre partenaire Voli-vola</span>
+        <ul class="ul-txt-info">
+          <li class="vignette-txt-info">Prix : 1500 €/p</li>
+          <li class="vignette-txt-info">7 jours compris</li>
+          <li class="vignette-txt-info">21 repas compris !</li>
+        </ul>
+      </div>
+    </div>
+<!-- vignette 2 -->
+<!-- vignette 3 -->
+    <div class="vignette">
+      <div class="vignette-img">
+        <img class="vi-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.5Ww01l7z8V002ssvIEYh1gHaE8%26pid%3DApi&f=1" alt="image de vignettes"/>
+      </div>
+      <div class="vignette-text">
+        <h4>Voyage au USA</h4>
+        <span style="padding-bottom: 5px;">Voyagez en exclusivité avec notre partenaire Voli-vola</span>
+        <ul class="ul-txt-info">
+          <li class="vignette-txt-info">Prix : 1500 €/p</li>
+          <li class="vignette-txt-info">7 jours compris</li>
+          <li class="vignette-txt-info">21 repas compris !</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!-- vignette 3 -->
 </body>
 </html>
 
